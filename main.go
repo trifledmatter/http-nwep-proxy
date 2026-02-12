@@ -14,9 +14,9 @@ func main() {
 	defer nwfetch.Close()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		target := r.URL.Query().Get("url")
+		target := r.URL.Query().Get("addr")
 		if target == "" {
-			http.Error(w, "missing ?url= parameter", http.StatusBadRequest)
+			http.Error(w, "missing ?addr= parameter", http.StatusBadRequest)
 			return
 		}
 
