@@ -36,18 +36,18 @@ func main() {
 func handleRaw(w http.ResponseWriter, r *http.Request) {
 	target := r.URL.Query().Get("addr")
 	if target == "" {
-		http.Error(w, "missing ?addr= parameter", http.StatusBadRequest)
+		fmt.Fprint(w, "missing ?addr= parameter")
 		return
 	}
 
 	resp, err := client.Get(target)
 	if err != nil {
-		http.Error(w, fmt.Sprintf("Unable to reach %s", target), http.StatusBadGateway)
+		fmt.Fprintf(w, "Unable to reach %s", target)
 		return
 	}
 
 	if err := resp.StatusError(); err != nil {
-		http.Error(w, fmt.Sprintf("upstream error: %s — %s", resp.Status, resp.StatusDetails), http.StatusBadGateway)
+		fmt.Fprintf(w, "upstream error: %s — %s", resp.Status, resp.StatusDetails)
 		return
 	}
 
@@ -63,7 +63,7 @@ func handleRaw(w http.ResponseWriter, r *http.Request) {
 func handleIframe(w http.ResponseWriter, r *http.Request) {
 	target := r.URL.Query().Get("addr")
 	if target == "" {
-		http.Error(w, "missing ?addr= parameter", http.StatusBadRequest)
+		fmt.Fprint(w, "missing ?addr= parameter")
 		return
 	}
 
