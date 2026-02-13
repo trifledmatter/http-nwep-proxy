@@ -1,4 +1,4 @@
 github.com/usenwep/nwep-go v0.0.0-20260212032203-44a2197d5c10 h1:2LHQMd6gS1Q2kOimEL5AZVh9oFnAuUv3Ebd6459mSVg=
 github.com/usenwep/nwep-go v0.0.0-20260212032203-44a2197d5c10/go.mod h1:2vLY4Qks+bGwz9l+Yvu364JIcOspaNs/XbvkQRyKIWI=
-github.com/usenwep/nwfetch-go v0.0.0-20260212175644-9189de416845 h1:0o7dd/2HyM1F+1r7pGmxyzNbjJNM5KfAZpk6KjafNOM=
-github.com/usenwep/nwfetch-go v0.0.0-20260212175644-9189de416845/go.mod h1:dKFaXzAu6VSWazkH8M+rcG8TgWd8+dGsaJcjEkgzOeI=
+github.com/usenwep/nwfetch-go v0.0.0-20260213165848-14a86541294b h1:OlD7w7zyxdS+N2PyI6RAAV29niW5ebuiVNMX2hz6PXs=
+github.com/usenwep/nwfetch-go v0.0.0-20260213165848-14a86541294b/go.mod h1:dKFaXzAu6VSWazkH8M+rcG8TgWd8+dGsaJcjEkgzOeI=

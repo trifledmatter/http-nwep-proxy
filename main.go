@@ -71,7 +71,7 @@ func handleIframe(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	fmt.Fprintf(w, `<!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"><title>nwep proxy</title>
+<head><meta charset="utf-8"><title>HTTP to NWEP Proxy Server</title>
 <style>*{margin:0;padding:0}iframe{width:100%%;height:100vh;border:none}</style>
 </head>
 <body><iframe src="%s"></iframe></body>
